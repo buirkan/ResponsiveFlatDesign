@@ -1,0 +1,395 @@
+.responsive-hamb-btn {
+	float: right;
+	font-size: 1.6em;
+	padding: 7px 12px;
+	color: #000;
+	border-radius: 4px;
+	border: 0px solid #e0e0e0;
+	display: none;
+	z-index: 9999;
+	background: transparent;
+}
+
+#close-responsive-btn {
+	display: none;
+	float: left;
+	color: #fff;
+	padding: 12px 23px;
+}
+
+.responsive-hamb-btn:active, :focus{
+	outline: none;
+}
+
+.responsive-hamb-btn:hover {
+	cursor: pointer;
+}
+
+.responsive-nav-menu {
+	display: inline-block;
+	position: fixed;
+	background: #3e4666;
+	width: 340px;
+	right: -400px;
+	z-index: 9999;
+	height: 100%;
+	top: 0	;
+	transition: all .3s ease-in-out;
+	overflow-y: auto;
+}
+
+.dim {
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(50,50,50,0.5);
+	opacity: 1;
+}
+
+.responsive-list {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+
+.responsive-list-element {
+	padding: 24.5px 0px;
+	font-size: 1.1em;
+	transition: all .3s ease-in;
+	position: relative;
+	list-style: none;
+}
+
+#icons-menu {
+	color: #fff;
+	font-size: 20px;
+	max-width: 16px;
+	display: none;
+}
+
+.responsive-list-element a {
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+}
+
+.responsive-list-element:hover {
+	background: #303750;
+	cursor: pointer;
+}
+
+/*responsive nav menu*/
+@media only screen and (max-width: 800px){
+	.subtitle-card ,
+	.content-images-dif p {
+		font-size: 0.9em;
+	}
+
+	.info-plans-responsive {
+		margin: 20px 50px;
+	}
+}
+
+@media only screen and (max-width: 835px) {
+	.after-half-circle h1 {
+		font-size: 2.6em;
+	}
+
+	.footer-list-content {
+		max-width: 110px;
+	}
+}
+
+@media only screen and (max-width: 1354px) {
+	.itens-cards {
+		width: 33.3333333%;
+		margin: 0px 28px 10px;
+	}
+
+	.subtitle-card {
+		max-width: 400px;
+	}
+}
+
+/* med width */
+@media only screen and (max-width: 900px) {
+	.itens-list {
+		display: none;
+	}
+
+	#show-responsive-btn {
+		display: block;
+	}
+	
+	.my-grid {
+		padding: 90px 25px;
+	}
+
+	.itens-cards {
+		margin: 25px;
+		padding: 0px;
+	}
+
+	.icons {
+		display: block;
+		width: 100%;
+		text-align: left;
+		font-size: 5em;
+	}
+
+	.the-plans-title {
+		font-size: 2.8em;
+		padding: 45px;
+	}
+
+	.title-card {
+		font-size: 19px;
+		margin: 1em 0em;
+		text-align: left;
+	}
+
+	.subtitle-card {
+		text-align: left;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	.content-images-dif p {
+		font-size: 15.5px;
+	}
+
+	.footer-list-content {
+		margin: 0px 28px;
+	}
+
+	.info-plans-responsive {
+		margin: 40px 73px;
+		height: 312px;
+	}
+
+	.item-plans-responsive {
+		font-size: 1.08em;
+	}
+}
+
+/*min width*/
+@media only screen and (max-width: 590px) {
+	.my-grid {
+		padding: 60px 0px;
+		text-align: center;
+	}
+
+	.itens-cards {
+		margin: 20px 0px;
+		padding: 0px;
+		width: 100%;
+	}
+
+	.fa-4x {
+		font-size: 3em !important;
+	}
+
+	.icons {
+		text-align: center;
+	}
+
+	.subtitle-card {
+		text-align: center;
+		margin: 0 30px;
+		font-size: 14px;
+		max-width: 100%;
+	}
+
+	.title-card {
+		text-align: center;
+	}
+
+	.info-plans-responsive {
+		margin: 20px !important;
+	}
+
+	.especific-plan-responsive {
+		left: 0;
+	}
+
+	.list-cards-responsive {
+		width: 53%;
+	}
+
+	#plan-description {
+		display: none;
+	}
+	
+	.especific-plan-responsive,
+	.plan-title-responsive {
+		font-size: 1.3em;
+	}
+
+	.after-half-circle {
+		padding-top: 50px;
+		padding-bottom: 22px;
+	}
+
+	.after-half-circle h1,
+	.the-plans-title {
+		font-size: 2em;
+	}
+
+	.images-dif {
+		max-width: 135px;
+		margin: 11px;
+		float: right;
+		display: inline-block;
+	}
+
+	.content-images-dif p {
+		max-width: 310px;
+		font-size: .89em;
+		margin-top: 30px;
+		margin-bottom: 19px;
+	}
+
+	.footer-list-content {
+		max-width: 50%;
+		margin: 0px 20px 6px;
+	}
+
+	#social-medias {
+		display: block;
+		max-width: inherit;
+		margin: 0;
+		position: relative;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 525px) {
+	.responsive-nav-menu {
+		width: 290px;
+		box-shadow: 10px 5px 5px #5a5a5a;
+		height: 99.3%;
+	}
+
+	.dot {
+		height: 11px;
+		width: 11px;
+	}
+
+	.radius-dots {
+		top: -38px;
+	}
+
+	.content-images-dif p {
+		max-width: 260px;
+	}
+
+	.info-plans-responsive {
+		height: 276px !important;
+	}
+
+	.list-cards-responsive {
+		width: 56%;
+		margin-bottom: 0px;
+	}
+
+	.item-plans-responsive p{
+		font-size: 1.06em;
+	}
+
+	.get-plan-btn {
+		padding: 8px 14px;
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width:462px) {
+	.images-dif {
+		max-width: 100px;
+		margin: 11px 6px;
+	}
+
+	.content-images-dif p {
+		max-width: 213px;
+	}
+
+	.the-plans-title {
+		padding: 38px;
+	}
+
+	.info-plans-responsive {
+		height: 239px !important;
+		margin: 40px 14px !important;
+	}
+
+	.item-plans-responsive {
+		font-size: .9em !important;
+	}
+
+	.get-plan-btn {
+		padding: 7px 12px;
+		font-size: 11px;
+	}
+
+	#responsive-icons-area {
+		margin-left: 45px;
+		display: inline-block;
+	}
+
+	#icons-menu {
+		display: inline-block;
+		margin-left: 25px;
+	}
+
+	.responsive-list-element {
+		font-size: 1.12em;
+		text-align: left;
+		line-height: 25px;
+	}
+
+	.responsive-list-element a {
+		margin-left: 10px;
+	}
+
+	.title-left-card-responsive {
+		width: 75px;
+	}
+
+	.plan-title-responsive {
+		min-width: 75px;
+		width: 75px;
+		padding: 13px;
+		font-size: .96em;
+	}
+
+	.especific-plan-responsive {
+		margin: 15px 18px 10px;
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.footer-list-content:nth-child(2) {
+		display: none;
+	}
+
+	.info-plans-responsive {
+		margin: 20px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.info-plans-responsive {
+		margin: 30px 50px;
+		height: 290px;
+	}
+
+	.item-plans-responsive {
+		font-size: 1.02em;
+		padding: 6px 1px;
+	}
+}

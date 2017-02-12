@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Flat Design UX</title>
+  <link rel="icon" href="./img/home-icon.png">
+	<link rel="stylesheet" href="./stylesheets/rst.css">
+	<link rel="stylesheet" href="./stylesheets/style.css">
+	<link rel="stylesheet" href="./stylesheets/responsive.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+  
+	<header>
+		<nav>
+			<h3 class="logo">Flat</h3>
+			<ul class="itens-list">
+			<div class="dropdown">
+				<li class="item-header item-drop-arrow">Option <span class="arrow"></span> </li>
+				<div class="dropdown-content">
+					<li class="item-header">Option</li>
+					<li class="item-header">Option</li>
+					<li class="item-header">Option</li>
+					<li class="item-header">Option</li>
+				</div>
+			</div>
+				<li class="item-header"><a href=""><span class="underline-animation">Option</span></a></li>
+				<li class="item-header"><a href=""><span class="underline-animation">Option</span></a></li>
+      </ul>
+      <button id="show-responsive-btn" class="responsive-hamb-btn" onclick="showMenuContent()"><span class="fa fa-bars"></span></button>
+		</nav>
+    <div id='dark-screen' class="dim"></div>
+	</header>
+
+  <div id="responsive-menu" class="responsive-nav-menu">
+  <button id="close-responsive-btn" class="responsive-hamb-btn" onclick="closeMenuContent()"><span class="fa fa-close"></span></button>
+    <ul class="responsive-list">
+      <li class="responsive-list-element">
+        <span id="responsive-icons-area">
+          <span id="icons-menu" class="fa fa-users"></span>
+          <a href="#">Option</a>
+        </span>
+      </li>
+      <hr class="hr-style-1">
+      <li class="responsive-list-element">
+        <span id="responsive-icons-area">
+          <span id="icons-menu" class="fa fa-database"></span>
+          <a href="#">Option</a>
+        </span>
+      </li>
+      <hr class="hr-style-1">
+      <li class="responsive-list-element">
+        <span id="responsive-icons-area">
+          <span id="icons-menu" class="fa fa-commenting"></span>
+          <a href="#">Option</a>
+        </span>
+      </li>
+      <hr class="hr-style-1">
+      <li class="responsive-list-element">
+        <span id="responsive-icons-area">
+          <span id="icons-menu" class="fa fa-plane"></span>
+          <a href="#">Option</a>
+        </span>
+      </li>
+      <hr class="hr-style-1">
+      <li class="responsive-list-element">
+        <span id="responsive-icons-area">
+          <span id="icons-menu" class="fa fa-bus"></span>
+          <a href="#">Option</a>
+        </span>
+      </li>
+      <hr class="hr-style-1">
+      <li class="responsive-list-element">
+        <span id="responsive-icons-area">
+          <span id="icons-menu" class="fa fa-tags"></span>
+          <a href="#">Option</a>
+        </span>
+      </li>
+      <hr class="hr-style-1">
+    </ul>
+  </div>
+
+	<div class="carousel-container">
+		<div class="slide-cart">
+			<img class="photos-carousel fade" src="../images/man-people-office-writing.jpg" alt="">
+		</div>
+		<div class="slide-cart">
+			<img class="photos-carousel fade" src="../images/girl-art-wall.jpeg" alt="">
+		</div>
+		<div class="slide-cart">
+			<img class="photos-carousel fade" src="../images/people-office-group-team.jpg" alt="">
+		</div>
+		<div class="radius-dots">
+			<span class="dot" onclick="currSlide(1)"></span>
+			<span class="dot" onclick="currSlide(2)"></span>
+			<span class="dot" onclick="currSlide(3)"></span>
+		</div>	
+	</div>
+  
+	<div class="my-grid">
+		<div class="itens-cards">
+			<i class="fa fa-envelope fa-4x icons" aria-hidden="true"></i>
+			<h3 class="title-card">E-Mail Services</h3>
+			<p class="subtitle-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque accusantium, eos at cumque debitis porro, ut labore eplaceat?</p>
+		</div>
+		<div class="itens-cards">
+			<i class="fa fa-calendar-check-o fa-4x icons" aria-hidden="true"></i>
+			<h3 class="title-card">Delivery Date</h3>
+			<p class="subtitle-card">Lorem dolor sit amet, consectetur adipisicing elit. Eaque accusantium, eos at cumque debitis porro, ut labore eplaceat?</p>
+		</div>
+		<div class="itens-cards">
+			<i class="fa fa-cloud-upload fa-4x icons" aria-hidden="true"></i>
+			<h3 class="title-card">Cloud Server</h3>
+			<p class="subtitle-card">Lorem ipsum asdasdpskadpk sit amet, consectetur adipisicing elit. Eaque accusantium, eos at cumque debitis porro, ut labore eplaceat?</p>
+		</div>
+		<div class="itens-cards">
+			<i class="fa fa-user fa-4x icons" aria-hidden="true"></i>
+			<h3 class="title-card">Comunnity</h3>
+			<p class="subtitle-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel laudantium sunt, incidunt sequi temporibus, ipsa qui ipsum hic fugiat corporis velit i, beatae commodi.</p>
+		</div>
+	</div>
+
+	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 23.2" style="enable-background:new 0 0 300 23.2;" xml:space="preserve">
+    <polygon class="pol" points="0,0 300,0 150,23.2 "></polygon>
+  </svg>
+
+  <div class="content-cards">
+  		<h1 class="the-plans-title">Our Plans !</h1>
+
+  		<div class="info-plans">
+        <h2 class="plan-title">Basic</h2>
+  			<svg class="svg-cards" style="background-color: #fff;"; version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 23.2" style="enable-background:new 0 0 300 23.2;" xml:space="preserve">
+  				<polygon class="polygon-cards" style="fill: #2dc36a;" points="0,0 300,0 150,23.2 "></polygon>
+     		</svg>
+
+     		<h2 class="especific-plan">Plan 1 - XX GB</h2>
+     		<hr class="hr-style-1">
+  			<ol class="list-cards">
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  			</ol>
+        <div style="display: inline-block; float: right;">
+          <button class="get-plan-btn">GET IT NOW !</button>
+        </div>
+  		</div>
+
+      <!-- RESPONSIVE DIV -->
+
+      <div style="display: none;" class="info-plans-responsive">
+        <div class="title-left-card-responsive">
+          <h2 class="plan-title-responsive">Basic</h2>
+        </div>
+
+        <h2 class="especific-plan-responsive">Plan 1 - XX GB</h2>
+        <hr class="hr-style-1">
+        <ol class="list-cards-responsive">
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+        </ol>
+        <div style="display: inline-block; float: right;">
+          <button class="get-plan-btn">GET IT NOW !</button>
+        </div>
+      </div>
+
+  		<div class="info-plans">
+        <h2 class="plan-title">Plus</h2>
+        <svg class="svg-cards" style="background-color: #fff;"; version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 23.2" style="enable-background:new 0 0 300 23.2;" xml:space="preserve">
+          <polygon class="polygon-cards" style="fill: #2dc36a;" points="0,0 300,0 150,23.2 "></polygon>
+        </svg>
+
+     		<h2 class="especific-plan">Plan 2 - XX GB</h2>
+     		<hr class="hr-style-1">
+  			<ol class="list-cards">
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  			</ol>
+        <div style="display: inline-block; float: right;">
+          <button class="get-plan-btn">GET IT NOW !</button>
+        </div>
+  		</div>
+
+      <!-- RESPONSIVE DIV -->
+      <div style="display: none;" class="info-plans-responsive">
+        <div class="title-left-card-responsive">
+          <h2 class="plan-title-responsive">Plus</h2>
+        </div>
+
+        <h2 class="especific-plan-responsive">Plan 2 - XX GB</h2>
+        <hr class="hr-style-1">
+        <ol class="list-cards-responsive">
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+        </ol>
+        <div style="display: inline-block; float: right;">
+          <button class="get-plan-btn">GET IT NOW !</button>
+        </div>
+      </div>
+
+
+
+
+  		<div class="info-plans">
+        <h2 class="plan-title">Plus Master</h2>
+        <svg class="svg-cards" style="background-color: #fff;"; version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 23.2" style="enable-background:new 0 0 300 23.2;" xml:space="preserve">
+        <polygon class="polygon-cards" style="fill: #2dc36a;" points="0,0 300,0 150,23.2 "></polygon>
+      </svg>
+
+     		<h2 class="especific-plan">Plan 3 - XX GB</h2>
+     		<hr class="hr-style-1">
+  			<ol class="list-cards">
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  				<li class="item-plans">
+            <span class="fa fa-caret-square-o-right"><p>Item</p></span>
+          </li>
+  			</ol>
+        <div style="display: inline-block; float: right;">
+          <button class="get-plan-btn">GET IT NOW !</button>
+        </div>
+  		</div>
+
+      <!-- RESPONSIVE DIV -->
+
+      <div style="display: none;" class="info-plans-responsive">
+        <div class="title-left-card-responsive">
+          <h2 class="plan-title-responsive">Plus Master</h2>
+        </div>
+
+        <h2 class="especific-plan-responsive">Plan 3 - XX GB</h2>
+        <hr class="hr-style-1">
+        <ol class="list-cards-responsive">
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+          <li class="item-plans-responsive">
+            <span class="fa fa-caret-square-o-right"><p>Item<p id="plan-description"> - Lorem ipsum dolor sit.</p></p></span>
+          </li>
+        </ol>
+        <div style="display: inline-block; float: right;">
+          <button class="get-plan-btn">GET IT NOW !</button>
+        </div>
+      </div>
+  </div>
+
+	<section class="half-circle"></section>
+		<div class="after-half-circle">
+			<h1>The Differential !</h1>
+			<div class="content-images-dif">
+				<img class="images-dif" src="../images/iconCamera.png" alt="Camera logo">
+				<h2>The Coverage</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus empore porro rem modi est quo deleniti magnam autem am ullam, quod sapiente commodi, sit distinctio Lorem ipsum dol consequatur amet vero est, excepturi quae ea distinctio tempore as dolorem rerum? enim esse perspiciatis quidem. Ullam, similique. MUS!</p>
+			</div>
+			<hr class="hr-style-1">
+			<div class="content-images-dif">
+				<img class="images-dif" src="../images/verification.png" alt="Security logo">
+				<h2>Our Security</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates voluptas voluptatibus iure, saepe voluptatem fuga. Ratione asperiores atque rerum sed, repellat odio recusandae quas praesentisto non, vel perspiciatis s Lorem ipsum amet vero estolor sit amet, consectetur recusandae totam.</p>
+			</div>
+			<hr class="hr-style-1">
+			<div class="content-images-dif">
+				<img class="images-dif" src="../images/iconBook.png" alt="Book logo">
+				<h2>Ideas & Planning</h2>
+				<p>Lorem ipsum dolor sit a incidunt, earum expedita odio. Numquam distinctio ipsum voluptate, aliquid vero. sit amet, consectetur adipisicing elit. Saepe, dicta! Placeat, adipisci, incidunt aliquam quo quibusdam omnis entium quidem deserunt error optio reiciendis accusamus saepe aperiam sit consectetuum placeat.</p>
+			</div>
+		</div>
+	<section>
+
+  	<svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="60" viewBox="0 0 100 100" preserveAspectRatio="none">
+  		<path id="curved-path" d="M0 100 C 20 0 50 0 100 100 Z"></path>
+  	</svg>
+  	<footer>
+  		<div class="footer-content">
+  			<div class="footer-list-content">
+  				<h3 class="title-footer">TITLE FOOTER</h3>
+  				<ul class="footer-ul">
+  					<li class="footer-li"><a href=""><span class="underline-animation anim-ft">Option</span></a></li>
+  					<li class="footer-li"><a href=""><span class="underline-animation anim-ft">Option</span></a></li>
+  					<li class="footer-li"><a href=""><span class="underline-animation anim-ft">Option</span></a></li>
+  				</ul>
+  			</div>
+  			<div class="footer-list-content">
+  				<h3 class="title-footer">TITLE FOOTER</h3>
+  				<ul class="footer-ul">
+  					<li class="footer-li"><a href=""><span class="underline-animation anim-ft">Option</span></a></li>
+  					<li class="footer-li"><a href=""><span class="underline-animation anim-ft">Option</span></a></li>
+  					<li class="footer-li"><a href=""><span class="underline-animation anim-ft">Option</span></a></li>
+  				</ul>
+  			</div>
+  			<div class="footer-list-content">
+  				<h3 class="title-footer">TITLE FOOTER</h3>
+  				<ul class="footer-ul">
+  					<li class="footer-li"><a href=""><span class="underline-animation anim-ft">Option</span></a></li>
+  					<li class="footer-li"><a href=""><span class="underline-animation anim-ft">Option</span></a></li>
+  					<li class="footer-li"><a href=""><span class="underline-animation anim-ft">Option</span></a></li>
+  				</ul>
+  			</div>
+  			<div id="social-medias" class="footer-list-content">
+  				<span><a title="Twitter" href="https://twitter.com" target="_blank" class="media-icons fa fa-twitter-square fa-2x"></a></span>
+  				<span><a title="Facebook" href="https://www.facebook.com" target="_blank" class="media-icons fa fa-facebook-square fa-2x"></a></span>
+  				<span><a title="Instagram" href="https://www.instagram.com/" target="_blank" class="media-icons fa fa-instagram fa-2x"></a></span>
+  				<span><a title="Google+" href="https://plus.google.com/?hl=pt_br" target="_blank" class="media-icons fa fa-google-plus-square fa-2x"></a></span>
+  			</div>
+  		</div>
+  	</footer>
+	<div class="dev">
+		<span>MADE BY FELIPE SILVA</span>
+	</div>
+  </section>
+
+  <script src="./scripts/slide.js"></script>
+  <script src="./scripts/resp.js"></script>
+
+</body>
+</html>
