@@ -6,25 +6,25 @@ var infoPlansCard = document.getElementsByClassName("info-plans"); /*card princi
 var infoPlansResponsive = document.getElementsByClassName('info-plans-responsive');
 
 function showMenuContent() {
-	document.querySelector('#show-responsive-btn').style.display = 'none';
-	document.querySelector('#close-responsive-btn').style.display = 'block';
+    document.querySelector('#show-responsive-btn').style.display = 'none';
+    document.querySelector('#close-responsive-btn').style.display = 'block';
 }
 
 function closeMenuContent() {
-	document.querySelector('#show-responsive-btn').style.display = 'block';
+    document.querySelector('#show-responsive-btn').style.display = 'block';
 }
 
 var showResponsiveMenu = () => {
-	document.body.style.overflow = 'hidden';
-	darkness.style.display = 'block';
-	rightMenu.style.right = '0px'; /*slide in*/
+    document.body.style.overflow = 'hidden';
+    darkness.style.display = 'block';
+    rightMenu.style.right = '0px'; /*slide in*/
 }
 
 var closeResponsiveMenu = () => {
-	darkness.style.display = 'none';
-	rightMenu.style.right = '-400px'; /*slide out*/
-	openMenu.style.display = 'block';
-	document.body.style.overflow = 'inherit';
+    darkness.style.display = 'none';
+    rightMenu.style.right = '-400px'; /*slide out*/
+    openMenu.style.display = 'block';
+    document.body.style.overflow = 'inherit';
 }
 
 (function slideResponsiveMenu() {
